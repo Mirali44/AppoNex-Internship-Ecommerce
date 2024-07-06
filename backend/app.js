@@ -9,9 +9,10 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 const corsOptions = {
-  origin: 'https://mirali44.github.io/AppoNex-Internship-Ecommerce/', 
+  origin: 'https://mirali44.github.io/AppoNex-Internship-Ecommerce/',
   methods: 'GET,POST,OPTIONS',
   allowedHeaders: 'Content-Type,Authorization',
+  credentials: true,
 };
 
 app.use(cors(corsOptions));
